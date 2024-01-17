@@ -1,2 +1,4 @@
 # Wiki-Sinatra
-l
+<!-- <% greet = "now" %> regular embedding tag -->
+
+<!-- <%= greet = "now" %> output embedding tag -->

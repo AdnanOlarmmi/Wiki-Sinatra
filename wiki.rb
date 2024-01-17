@@ -12,6 +12,10 @@ get "/" do
   erb :welcome
 end
 
+get "/test" do
+    erb :test
+end
+
 get "/:title" do
   page_content(params[:title])  
 end
