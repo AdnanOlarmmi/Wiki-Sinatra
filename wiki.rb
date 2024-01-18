@@ -30,8 +30,14 @@ get "/:title" do
     erb :show
 end
 
+get "/:title/edit" do
+   @title = params[:title]
+   @content = page_content(@title)
+  erb :edit
+end
+
 post "/create" do
    new_entity = params
    save_content(new_entity["title"], new_entity["content"])
-   erb :create
+   redirect "/#{params["title"]}"
 end
