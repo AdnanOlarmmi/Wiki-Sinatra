@@ -20,6 +20,10 @@ get "/test" do
     erb :test
 end
 
+get "/new" do
+    erb :new
+end
+
 get "/:title" do
     @title = params[:title]
     @content = page_content(@title)  
