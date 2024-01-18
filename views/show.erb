@@ -5,3 +5,9 @@
 <div>
     <a href="/<%= @title %>/edit">Edit This Page</a>
 </div>
+<div>
+    <form method="post" action="/<%= @title %>">
+        <input type="hidden" name="_method" value="delete" />
+        <input type="submit" name="delete" />
+    </form>
+</div>
